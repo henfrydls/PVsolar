@@ -564,7 +564,7 @@ e.g.: 46.198633, 6.058435""", fg="red" ,font=('Helvetica', 8),
         webbrowser.open("mailto:?to=henfry@protonmail.com", new=1)
 
     def open_github_page(self):
-        webbrowser.open("https://github.com/henfrydls/PVcolab", new=1)
+        webbrowser.open("https://github.com/henfrydls/PVsolar", new=1)
 
     def open_stack_page(self):
         webbrowser.open("https://stackoverflow.com/users/14391986/henfry-de-los-santos", new=1)
