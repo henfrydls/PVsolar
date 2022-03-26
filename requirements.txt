@@ -1,0 +1,4 @@
+beautifulsoup4 == 4.10.0
+opencage == 2.0.0
+pandas
+Pillow == 9.0.1
