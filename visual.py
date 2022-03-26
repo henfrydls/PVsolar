@@ -1,8 +1,7 @@
 import tkinter as tk
 import webbrowser
-import modules
-import PVOUT_multi
-import concurrent.futures
+import resources.modules as modules
+import resources.PVOUT as PVOUT
 from tkinter import ttk
 from tkinter.constants import HORIZONTAL
 from tkinter.messagebox import showerror
@@ -269,16 +268,16 @@ e.g.: 46.198633, 6.058435""", fg="red" ,font=('Helvetica', 8),
             elif self.energy_entry.get().strip() == "":
                 showerror(title="Error: ENERGY_ZERO", message="Please enter an energy consumption (kWh).")
             elif self.ratio_entry.get().strip() != "(optional)" and self.ratio_entry.get().strip() != "":
-                self.E = PVOUT_multi.MTI(self.location_entry.get(), float(self.module_power_entry.get().strip()), float(self.energy_entry.get().strip()),
+                self.E = PVOUT.MTI(self.location_entry.get(), float(self.module_power_entry.get().strip()), float(self.energy_entry.get().strip()),
                 float(self.ratio_entry.get().strip()))
             elif self.coverage_entry.get().strip() != "(optional)" and self.coverage_entry.get().strip() != "":
-                self.E = PVOUT_multi.MTI(self.location_entry.get(), float(self.module_power_entry.get().strip()), float(self.energy_entry.get().strip()),
+                self.E = PVOUT.MTI(self.location_entry.get(), float(self.module_power_entry.get().strip()), float(self.energy_entry.get().strip()),
             1.25, (float(self.coverage_entry.get().strip())))
             elif (self.ratio_entry.get().strip() != "(optional)" and self.ratio_entry.get().strip() != "") and self.coverage_entry.get().strip() != "(optional)" and self.coverage_entry.get().strip() != "":
-                self.E = PVOUT_multi.MTI(self.location_entry.get(), float(self.module_power_entry.get().strip()), float(self.energy_entry.get().strip()),
+                self.E = PVOUT.MTI(self.location_entry.get(), float(self.module_power_entry.get().strip()), float(self.energy_entry.get().strip()),
                 float(self.ratio_entry.get().strip()), (float(self.coverage_entry.get().strip())))
             else:
-                self.E = PVOUT_multi.MTI(self.location_entry.get(), float(self.module_power_entry.get().strip()), float(self.energy_entry.get().strip()))
+                self.E = PVOUT.MTI(self.location_entry.get(), float(self.module_power_entry.get().strip()), float(self.energy_entry.get().strip()))
             self.update()
             if self.E:
                 self.connecting_label = tk.Label(self,
@@ -576,6 +575,3 @@ if __name__ == '__main__':
     app = Visual()
     app.resizable(False, False)
     app.mainloop()
-
-"""<div>Iconos diseñados por <a href="https://www.flaticon.es/autores/srip" title="srip">srip
-</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>"""
