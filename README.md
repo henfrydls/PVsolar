@@ -138,7 +138,7 @@ A String is a certain amount of solar modules connected in series. It's importan
   
 The maximum number of modules is **18 modules** in series *based on a certain location*
 
-After all previous data is determined The question is **How can I optimize my energy generation?** and here is where ***PVsolar*** comes into action. 
+After all previous data is determined the question is **"How can I optimize my energy generation?"** and here is where ***PVsolar*** comes into action. 
 
 <div align="center">
 
