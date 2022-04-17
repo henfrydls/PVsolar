@@ -12,7 +12,7 @@
   <h3 align="center">PVsolar</h3>
 
   <p align="center">
-    Program able to help distribute solar panels into an inverter MPPT inputs and estimate amount of solar panels needed to supply a users demand based on location.
+    A graphical user interface (GUI) able to help distribute solar panels into an inverter MPPT inputs and estimate amount of solar panels needed to supply a user demand based on location.
     <br />
     <a href="#getting-started">Installation</a>
     ·
