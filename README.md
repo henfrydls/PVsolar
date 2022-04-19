@@ -104,11 +104,15 @@ _Here is an example of how you can install and run this app._
    ```sh
    git clone https://github.com/henfrydls/PVsolar.git
    ```
-2. Install required libraries `requirements.txt`
+2. Change directory
+   ```sh
+   cd PVsolar
+   ```
+3. Install required libraries `requirements.txt`
    ```sh
    pip install -r requirements.txt
    ```
-3. Run the app
+4. Run the app
    ```py
    python visual.py
    ```
